@@ -3,11 +3,12 @@
   "tasks": [
     {
       "type": "cppbuild",
-      "label": "C/C++: gcc build active file",
-      "command": "C:\\MinGW\\bin\\gcc.exe", 
+      "label": "C/C++: g++ build active file",
+      "command": "C:\\MinGW\\bin\\g++.exe",
       "args": [
         "-fdiagnostics-color=always",
         "-g",
+        "-std=c++17",
         "${file}",
         "-o",
         "${fileDirname}\\${fileBasenameNoExtension}.exe"
@@ -21,8 +22,7 @@
       "group": {
         "kind": "build",
         "isDefault": true
-      },
-      "detail": "현재 열린 파일을 해당 폴더에 컴파일합니다."
+      }
     }
   ]
 }
